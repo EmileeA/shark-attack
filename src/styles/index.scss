@@ -1,4 +1,5 @@
 @import './variables';
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
 body {
   margin: 0;
@@ -14,6 +15,6 @@ code {
     monospace;
 }
 
-.App {
-  background-color: $blue;
-}
+// .App {
+//   background-color: $white;
+// }
