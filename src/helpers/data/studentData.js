@@ -139,8 +139,11 @@ const students = [
   },
 ];
 
+export default students;
+
 
 // This file should have an array at the top called students
+// eslint-disable-next-line max-len
 // The array should have one student object for every student in the class (if you don't remember the other students in your class thats SUPER awkward but everyone is listed in classtracker so go there and figure it out)
 // Each student object should have the following keys: id, firstName, lastName, isDead
 // The isDead key should be set to false for everyone on load
