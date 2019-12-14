@@ -1,0 +1,14 @@
+.graveyard {
+  border: 3px solid white;
+  margin: 1.5em;
+  height: 90vh;
+  width: 45%;
+  background-image: url('./images/graveyard.jpg');
+  background-size: cover;
+  color: white;
+
+  #graveId {
+    position: absolute;
+    bottom: 2em;
+  }
+}

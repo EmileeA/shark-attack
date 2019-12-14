@@ -9,7 +9,7 @@ import Graveyard from '../components/Graveyard/Graveyard';
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div className="App row d-flex justify-content-center">
         <SharkTank />
         <Graveyard />
       </div>

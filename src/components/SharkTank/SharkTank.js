@@ -5,8 +5,8 @@ import './SharkTank.scss';
 class SharkTank extends React.Component {
   render() {
     return (
-      <div className="sharkTank row d-flex justify-content-center">
-        <h4 id="tankLabel">Shark Tank</h4>
+      <div className="sharkTank row col-3">
+        <h3 id="tankId">Shark Tank</h3>
       </div>
     );
   }

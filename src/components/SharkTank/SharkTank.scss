@@ -1,13 +1,13 @@
 .sharkTank {
   border: 3px solid white;
-  margin: 2em;
-  width: 50%;
+  margin: 1.5em;
   height: 90vh;
+  width: 45%;
   background-image: url('./images/sharkTank.jpg');
   background-size: cover;
   color: white;
 
-  #tankLabel {
+  #tankId {
     position: absolute;
     bottom: 2em;
   }
