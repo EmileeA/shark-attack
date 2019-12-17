@@ -1,3 +1,9 @@
+/* eslint-disable max-len */
+// This file should have an array at the top called students
+// The array should have one student object for every student in the class (if you don't remember the other students in your class thats SUPER awkward but everyone is listed in classtracker so go there and figure it out)
+// Each student object should have the following keys: id, firstName, lastName, isDead
+// The isDead key should be set to false for everyone on load
+
 const students = [
   {
     id: 'student1',
@@ -139,14 +145,35 @@ const students = [
   },
 ];
 
-export default students;
-
-
-// This file should have an array at the top called students
-// eslint-disable-next-line max-len
-// The array should have one student object for every student in the class (if you don't remember the other students in your class thats SUPER awkward but everyone is listed in classtracker so go there and figure it out)
-// Each student object should have the following keys: id, firstName, lastName, isDead
-// The isDead key should be set to false for everyone on load
 // This file should export a function called livingStudents that returns an array of the students who have isDead === false
+
+const livingStudents = () => {
+  const studentArray = [];
+  students.forEach((student) => {
+    if (student.isDead === false) {
+      studentArray.push(student);
+    }
+  });
+  return studentArray;
+};
+
 // This file should export a function called dearlyBeloved that returns an array of the students who have isDead === true
+
+const dearlyBeloved = () => {
+  const deceasedArray = [];
+  students.forEach((student) => {
+    if (student.isDead === true) {
+      deceasedArray.push(student);
+    }
+  });
+  return deceasedArray;
+};
+
 // This file should export a function called followTheLight that takes in an id, finds that student, and changes isDead === true.
+
+const followTheLight = (studentId) => {
+  const studentIndex = students.findIndex((student) => student.id === studentId);
+  students[studentIndex].isDead = true;
+};
+
+export default { livingStudents, dearlyBeloved, followTheLight };
