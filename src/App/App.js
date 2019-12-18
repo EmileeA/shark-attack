@@ -30,14 +30,15 @@ class App extends React.Component {
     studentData.followTheLight(studentToAttack);
     const livingStudents = studentData.livingStudents();
     this.setState({ livingStudents });
+    this.setState({})
   }
+}
 
+  // As a user, when the page loads, I should see a button in the shark tank that says SHARK ATTACK.
   render() {
     return (
-      // As a user, when the page loads, I should see a button in the shark tank that says SHARK ATTACK.
       <div className="App">
-      <div className="App row d-flex justify-content-center">
-        <div onClick={this.attackAStudent} className="btn btn-danger">Shark Attack!</div></div>
+      <div className="App row d-flex justify-content-center"><div onClick={this.attackAStudent} className="btn btn-danger">Shark Attack!</div></div>
         <div className="row">
         <SharkTank students={this.state.livingStudents} />
         <Graveyard students={this.state.deadStudents} />

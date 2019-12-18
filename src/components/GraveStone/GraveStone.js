@@ -1,6 +1,6 @@
 // a card of your choosing that gets called from the Graveyard component inside a map.
-imoprt React from 'react';
-import './GravStone.scss';
+import React from 'react';
+import './GraveStone.scss';
 import studentShape from '../../helpers/propz/studentShape';
 
 class GraveStone extends React.Component {
@@ -10,7 +10,7 @@ class GraveStone extends React.Component {
 
   render() {
     const { student } = this.props;
-    return(
+    return (
      <div className="graveCard">
      <div class="studentName">
        <h3>Dearly Beloved</h3>
