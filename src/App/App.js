@@ -11,19 +11,37 @@ import studentData from '../helpers/data/studentData';
 class App extends React.Component {
   state = {
     livingStudents: [],
+    deadStudents: [],
   }
 
   componentDidMount() {
+    const livingStudents = studentData.livingStudents();
+    const deadStudents = studentData.dearlyBeloved();
+    this.setState({ livingStudents });
+    this.setState({ deadStudents });
+  }
+
+  // As a user, when I click on the SHARK ATTACK button, the app should pick a random live student and change their isDead key to true.
+  attackAStudent = () => {
+    if (this.state.livingStudents.length > 0) {
+    const randomizer = (Math.floor(Math.random() * this.state.livingStudents.length));
+    const studentToAttack = this.state.livingStudents[randomizer].id;
+    studentData.followTheLight(studentToAttack);
     const livingStudents = studentData.livingStudents();
     this.setState({ livingStudents });
   }
 
   render() {
     return (
+      // As a user, when the page loads, I should see a button in the shark tank that says SHARK ATTACK.
+      <div className="App">
       <div className="App row d-flex justify-content-center">
+        <div onClick={this.attackAStudent} className="btn btn-danger">Shark Attack!</div></div>
+        <div className="row">
         <SharkTank students={this.state.livingStudents} />
-        <Graveyard />
+        <Graveyard students={this.state.deadStudents} />
       </div>
+    </div>
     );
   }
 }
