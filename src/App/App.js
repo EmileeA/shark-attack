@@ -14,14 +14,14 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    const livingStudents = studentData.living.Students();
+    const livingStudents = studentData.livingStudents();
     this.setState({ livingStudents });
   }
 
   render() {
     return (
       <div className="App row d-flex justify-content-center">
-        <SharkTank />
+        <SharkTank students={this.state.livingStudents} />
         <Graveyard />
       </div>
     );
