@@ -20,6 +20,7 @@ class App extends React.Component {
     this.setState({ livingStudents });
     this.setState({ deadStudents });
   }
+}
 
   // As a user, when I click on the SHARK ATTACK button, the app should pick a random live student and change their isDead key to true.
   attackAStudent = () => {
