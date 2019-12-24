@@ -18,7 +18,7 @@ class Student extends React.Component {
       // class is a reserved word in react so we have to user className. class means something in react.
       // classes are kind of like containers for information behavior. Our react class gives us all this cool syntax.
       // proptypes is an object
-      // class (insertComponentname) extends the entire React.Component. Because react.component knows what to do with react functions.
+      // class (insertComponentname) extends the entire React.Component. Because react.component knows what to do with react functions.3`
       <div className="studentCard">
       <p className="card-top" alt={student.name}></p>
         <p>{student.firstName}</p>
