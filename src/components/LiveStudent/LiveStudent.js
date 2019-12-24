@@ -20,7 +20,7 @@ class Student extends React.Component {
       // proptypes is an object
       // class (insertComponentname) extends the entire React.Component. Because react.component knows what to do with react functions.3`
       <div className="studentCard">
-      <p className="card-top" alt={student.name}></p>
+      <p className="card-top" alt={student.firstName}></p>
         <p>{student.firstName}</p>
         </div>
     );
