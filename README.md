@@ -11,8 +11,8 @@ Our entire class has fallen into a pool infested with sharks and they are HUNGRY
 * Webpack
 
 ## Screenshots
-![on load](IMGHERE)
-![after clicking shark attack](IMGHERE)
+![on load](https://raw.githubusercontent.com/EmileeA/shark-attack/master/screenshots/SharkAttackBefore.png)
+![after clicking shark attack](https://raw.githubusercontent.com/EmileeA/shark-attack/master/screenshots/SharkAttackAfter.png)
 
 
 ## Instructions for how to run the project
