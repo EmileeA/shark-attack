@@ -13,9 +13,8 @@ class GraveStone extends React.Component {
     return (
      <div className="graveCard">
      <div class="studentName">
-       <h3>Dearly Beloved</h3>
-       <h4>{student.firstName}</h4>
-       <h4>{student.lastName}</h4>
+       <h4>Dearly Beloved</h4>
+       <h5>{student.firstName}</h5>
        </div>
      </div>
     );

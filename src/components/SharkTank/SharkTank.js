@@ -16,7 +16,7 @@ class SharkTank extends React.Component {
     const studentCards = students.map((student) => <LiveStudent key={student.id} student={student} />);
 
     return (
-      <div className="sharkTank row col-3">
+      <div className="sharkTank row col-5">
         <div className="studentContainer row">
         {studentCards}
         </div>
