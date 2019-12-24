@@ -1,8 +1,10 @@
 .graveyard {
+  display: flex;
+  justify-content: center;
   border: 3px solid white;
   margin: 1.5em;
-  height: 90vh;
-  width: 45%;
+  height: 100vh;
+  width: 50%;
   background-image: url('./images/graveyard.jpg');
   background-size: cover;
   color: white;
